@@ -74,6 +74,26 @@
     .deploy{border-radius:38px;background:linear-gradient(135deg,var(--plum),#4d093c 68%,#7a0d58);color:#fff;padding:36px;box-shadow:var(--shadow)} .deploy h2{color:#fff} .deploy p{color:rgba(255,255,255,.78);max-width:700px} .deploy code{background:rgba(255,255,255,.12);padding:3px 6px;border-radius:7px}
     .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px} .step{padding:16px;border-radius:20px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16)} .step b{display:block;margin-bottom:5px} .step span{color:rgba(255,255,255,.76);font-size:13px}
     footer{padding:36px 0 70px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* ---------- Click-to-enlarge modal ---------- */
+    .logo-tile,
+    .visual-thumb,
+    .thumb-media{cursor:zoom-in}
+    .logo-tile:focus-within,
+    .visual-thumb:focus-within,
+    .thumb-media:focus-within{outline:3px solid rgba(240,5,114,.35);outline-offset:3px}
+    .zoom-hint{font-size:10px;font-weight:850;color:rgba(42,6,35,.52);text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
+    .image-modal{position:fixed;inset:0;z-index:999;display:none;align-items:center;justify-content:center;padding:calc(18px + env(safe-area-inset-top)) 16px calc(18px + env(safe-area-inset-bottom));background:rgba(22,7,18,.78);backdrop-filter:blur(14px)}
+    .image-modal.open{display:flex}
+    .image-modal-panel{width:min(960px,100%);max-height:92svh;border-radius:28px;background:rgba(255,255,255,.96);box-shadow:0 30px 100px rgba(0,0,0,.34);overflow:hidden;display:flex;flex-direction:column}
+    .image-modal-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fff,var(--cream))}
+    .image-modal-title{margin:0;color:var(--plum);font-weight:950;letter-spacing:-.03em;font-size:15px;line-height:1.2}
+    .image-modal-close{appearance:none;border:0;background:var(--plum);color:#fff;width:38px;height:38px;border-radius:999px;font-size:24px;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:0 0 auto}
+    .image-modal-body{padding:16px;background:#fff;overflow:auto;display:flex;align-items:center;justify-content:center}
+    .image-modal-body img{width:auto;max-width:100%;max-height:72svh;object-fit:contain;border-radius:18px;background:var(--cream)}
+    .image-modal-caption{margin:0;padding:0 18px 16px;color:var(--muted);font-size:13px;line-height:1.45;background:#fff}
+    @media(max-width:640px){.image-modal{padding:calc(10px + env(safe-area-inset-top)) 10px calc(10px + env(safe-area-inset-bottom))}.image-modal-panel{border-radius:22px;max-height:94svh}.image-modal-body{padding:10px}.image-modal-body img{max-height:70svh}.image-modal-title{font-size:14px}.image-modal-close{width:36px;height:36px}}
+
     @media(max-width:980px){.hero-panel,.route-card{grid-template-columns:1fr}.hero-copy{padding:42px 34px 4px}.hero-visual{padding:0 34px 38px}.hero-points,.thumb-grid{grid-template-columns:1fr 1fr}.route-visual{border-left:0;border-top:1px solid var(--line)}.section-head{align-items:flex-start;flex-direction:column}.steps{grid-template-columns:1fr 1fr}}
     @media(max-width:640px){.wrap{padding:0 16px}.nav{padding:10px 16px}.nav-links{display:none}.hero{padding:28px 0 18px}.hero-panel{border-radius:28px;min-height:auto}.hero-copy{padding:30px 22px 0}.hero h1{font-size:43px}.lead{font-size:15px}.hero-actions .btn{width:100%}.hero-points,.thumb-grid,.fit-grid,.steps{grid-template-columns:1fr}.hero-visual{padding:0 22px 26px}section{padding:44px 0}.route-card{border-radius:28px}.route-text{padding:24px 20px}.route-visual{padding:16px}.logo-strip{grid-template-columns:1fr 1fr 1fr;gap:8px}.logo-tile{min-height:78px;padding:7px}.logo-tile img{max-height:48px}.logo-tile span{font-size:9px}.deploy{padding:26px;border-radius:28px}}
   </style>
@@ -159,5 +179,85 @@
     </section>
   </main>
   <footer><div class="wrap">Beauty Maxx Logo Decision Paths · Built for mobile review and fast brand discussion.</div></footer>
+
+
+  <div class="image-modal" id="imageModal" aria-hidden="true" role="dialog" aria-label="Expanded image preview">
+    <div class="image-modal-panel" role="document">
+      <div class="image-modal-top">
+        <p class="image-modal-title" id="modalTitle">Image preview</p>
+        <button class="image-modal-close" type="button" aria-label="Close expanded image">×</button>
+      </div>
+      <div class="image-modal-body">
+        <img id="modalImage" src="" alt="Expanded preview" />
+      </div>
+      <p class="image-modal-caption" id="modalCaption">Tap outside or press ESC to close.</p>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalCaption = document.getElementById('modalCaption');
+      const closeBtn = modal.querySelector('.image-modal-close');
+      let lastFocus = null;
+
+      function labelFor(img){
+        const tile = img.closest('.logo-tile');
+        const route = img.closest('.route-card');
+        const routeName = route ? (route.querySelector('.route-badge')?.textContent || '').trim() : '';
+        const tileRole = tile ? (tile.querySelector('span')?.textContent || '').trim() : '';
+        const alt = img.getAttribute('alt') || 'Beauty Maxx visual';
+        if(routeName && tileRole) return routeName + ' · ' + tileRole + ' · ' + alt;
+        if(routeName) return routeName + ' · ' + alt;
+        return alt;
+      }
+
+      function openModal(img){
+        lastFocus = document.activeElement;
+        const title = labelFor(img);
+        modalImg.src = img.currentSrc || img.src;
+        modalImg.alt = img.alt || 'Expanded Beauty Maxx preview';
+        modalTitle.textContent = title;
+        modalCaption.textContent = 'Expanded preview. Tap outside or press ESC to close.';
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+        closeBtn.focus({preventScroll:true});
+      }
+
+      function closeModal(){
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden','true');
+        document.body.style.overflow = '';
+        modalImg.src = '';
+        if(lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus({preventScroll:true});
+      }
+
+      document.querySelectorAll('.logo-tile img, .visual-thumb img, .thumb-media img').forEach(function(img){
+        const clickable = img.closest('.logo-tile, .visual-thumb, .thumb-media');
+        if(!clickable) return;
+        clickable.setAttribute('tabindex','0');
+        clickable.setAttribute('role','button');
+        clickable.setAttribute('aria-label','Open larger preview: ' + labelFor(img));
+        if(clickable.classList.contains('logo-tile') && !clickable.querySelector('.zoom-hint')){
+          const hint = document.createElement('div');
+          hint.className = 'zoom-hint';
+          hint.textContent = 'Tap to enlarge';
+          clickable.appendChild(hint);
+        }
+        clickable.addEventListener('click', function(){ openModal(img); });
+        clickable.addEventListener('keydown', function(e){
+          if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openModal(img); }
+        });
+      });
+
+      closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+      document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+    })();
+  </script>
+
 </body>
 </html>
