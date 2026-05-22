@@ -3,58 +3,103 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Beauty Maxx — Logo Decision Paths</title>
-  <meta name="description" content="Beauty Maxx logo decision paths, iPhone-ready HTML, thumbnail sentences, and brand growth options." />
-  <meta property="og:title" content="Beauty Maxx — Logo Decision Paths" />
-  <meta property="og:description" content="Choose the business route first. Then choose the logo." />
+  <title>Beauty Maxx — Brand Launch Direction</title>
+  <meta name="description" content="Beauty Maxx logo concepts, decision routes, selection criteria, and a long-term local-trust growth system." />
+  <meta property="og:title" content="Beauty Maxx — Brand Launch Direction" />
+  <meta property="og:description" content="Understand the six logos, explore the routes, then converge on a decision." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://beautymaxxlogo.netlify.app/" />
-  <meta property="og:image" content="https://beautymaxxlogo.netlify.app/assets/thumb-01-online-first-growth.png" />
   <meta name="theme-color" content="#f00572" />
   <style>
     :root{
-      --hot:#f00572;--hot2:#ff2c93;--plum:#2a0623;--plum2:#4b0b3c;--cream:#fff7fb;--cream2:#fff0f7;--white:#fff;--ink:#20151d;--muted:#6d5f68;--line:rgba(42,6,35,.12);--shadow:0 22px 70px rgba(42,6,35,.12);--soft:0 12px 34px rgba(42,6,35,.08);--max:1180px;--r:28px;
+      --hot:#f00572;--hot2:#ff2c93;--plum:#2a0623;--plum2:#4b0b3c;--plum3:#741458;
+      --cream:#fff7fb;--cream2:#fff0f7;--white:#fff;--ink:#20151d;--muted:#6d5f68;
+      --line:rgba(42,6,35,.12);--shadow:0 22px 70px rgba(42,6,35,.12);--soft:0 12px 34px rgba(42,6,35,.08);
+      --max:1180px;--r:28px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
     body{margin:0;font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);line-height:1.6;background:radial-gradient(circle at 15% 0%,rgba(240,5,114,.12),transparent 30%),radial-gradient(circle at 85% 10%,rgba(75,11,60,.10),transparent 28%),linear-gradient(180deg,var(--cream),#fff 42%,var(--cream) 100%);overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block} code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
     .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
-    .topbar{position:sticky;top:0;z-index:50;background:rgba(255,247,251,.78);border-bottom:1px solid var(--line);backdrop-filter:blur(18px);padding-top:env(safe-area-inset-top)}
+
+    /* ---------- Nav ---------- */
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(255,247,251,.80);border-bottom:1px solid var(--line);backdrop-filter:blur(18px);padding-top:env(safe-area-inset-top)}
     .nav{max-width:var(--max);margin:0 auto;padding:12px 22px;display:flex;justify-content:space-between;gap:18px;align-items:center}
     .mini-brand{display:flex;gap:10px;align-items:center;font-weight:950;color:var(--plum);letter-spacing:-.03em}
     .mini-mark{width:32px;height:32px;border-radius:12px;background:linear-gradient(135deg,var(--hot),var(--plum));box-shadow:0 12px 24px rgba(240,5,114,.25);position:relative;flex:none}
     .mini-mark:after{content:"";position:absolute;right:7px;top:7px;width:8px;height:8px;border-radius:50%;background:#fff}
-    .nav-links{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;font-size:13px;font-weight:850;color:rgba(42,6,35,.72)}
-    .nav-links a{color:inherit;text-decoration:none;padding:8px 10px;border-radius:999px}
+    .nav-links{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end;font-size:13px;font-weight:850;color:rgba(42,6,35,.72)}
+    .nav-links a{padding:8px 10px;border-radius:999px}
     .nav-links a:hover{background:rgba(240,5,114,.08);color:var(--plum)}
+
+    /* ---------- Hero ---------- */
     .hero{padding:58px 0 34px}
     .hero-panel{border-radius:42px;overflow:hidden;background:radial-gradient(circle at 76% 10%,rgba(255,255,255,.24),transparent 25%),linear-gradient(135deg,var(--hot),#ff1187 46%,var(--plum));color:#fff;box-shadow:var(--shadow);display:grid;grid-template-columns:1.02fr .98fr;gap:20px;min-height:620px}
     .hero-copy{padding:56px 52px;display:flex;flex-direction:column;justify-content:space-between;gap:34px}
-    .eyebrow,.micro{margin:0;display:inline-flex;width:max-content;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);font-size:12px;font-weight:950;letter-spacing:.11em;text-transform:uppercase;color:inherit}
+    .eyebrow{margin:0;display:inline-flex;width:max-content;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);font-size:12px;font-weight:950;letter-spacing:.11em;text-transform:uppercase}
+    .spark{width:11px;height:11px;display:inline-block;transform:rotate(45deg);background:#fff;border-radius:2px}
     .hero h1{margin:20px 0 16px;font-size:clamp(42px,7vw,90px);line-height:.94;letter-spacing:-.075em}
     .subtitle{margin:0;color:rgba(255,255,255,.92);font-size:clamp(16px,2.2vw,23px);font-weight:850;letter-spacing:-.02em}
     .lead{margin:24px 0 0;color:rgba(255,255,255,.90);font-size:18px;max-width:650px}
     .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
-    .btn{appearance:none;border:0;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 16px;border-radius:999px;font-weight:950;cursor:pointer}
+    .btn{appearance:none;border:0;display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 18px;border-radius:999px;font-weight:950;cursor:pointer}
     .btn.primary{background:#fff;color:var(--hot)} .btn.ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.24)}
     .hero-points{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
     .point{padding:16px;border-radius:20px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.16)} .point b{display:block;line-height:1.1;margin-bottom:6px} .point span{font-size:13px;color:rgba(255,255,255,.78);line-height:1.45;display:block}
     .hero-visual{display:flex;align-items:center;justify-content:center;padding:42px 42px 42px 0}
     .share-card{background:rgba(255,255,255,.97);color:var(--plum);border-radius:34px;padding:18px;box-shadow:0 28px 86px rgba(0,0,0,.23);transform:rotate(-1.3deg);width:min(470px,100%)}
-    .share-img{position:relative;overflow:hidden;border-radius:26px;aspect-ratio:16/9;background:var(--cream2)} .share-img img{width:100%;height:100%;object-fit:cover}
-    .overlay-text{position:absolute;left:18px;right:18px;bottom:18px;padding:14px 16px;border-radius:18px;background:rgba(42,6,35,.78);color:#fff;font-weight:950;font-size:clamp(18px,3.4vw,32px);letter-spacing:-.04em;line-height:1.02;backdrop-filter:blur(8px)}
+    .share-img{position:relative;overflow:hidden;border-radius:26px;aspect-ratio:16/9;background:linear-gradient(135deg,var(--cream2),#fff)} .share-img img{width:100%;height:100%;object-fit:contain;padding:7%}
+    .overlay-text{position:absolute;left:18px;right:18px;bottom:18px;padding:14px 16px;border-radius:18px;background:rgba(42,6,35,.78);color:#fff;font-weight:950;font-size:clamp(18px,3.4vw,30px);letter-spacing:-.04em;line-height:1.02;backdrop-filter:blur(8px)}
     .share-card h3{margin:16px 4px 4px;font-size:23px;letter-spacing:-.045em;line-height:1.1} .share-card p{margin:0 4px 4px;color:var(--muted);font-size:14px;line-height:1.5}
+
+    /* ---------- Section base ---------- */
     section{padding:62px 0}
     .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:26px}
     .kicker{color:var(--hot);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:950;margin-bottom:10px}
     h2{margin:0;color:var(--plum);font-size:clamp(30px,4.2vw,54px);line-height:1.02;letter-spacing:-.055em}
     .section-copy{margin:0;max-width:510px;color:var(--muted);font-size:16px}
+
+    /* ---------- Strategy ---------- */
+    .strategy-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}
+    .strategy-main,.strategy-side{border:1px solid var(--line);background:rgba(255,255,255,.74);box-shadow:var(--soft);border-radius:30px}
+    .strategy-main{padding:34px;min-height:260px;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+    .big-quote{font-size:clamp(28px,4vw,50px);line-height:1.02;letter-spacing:-.05em;font-weight:950;color:var(--plum);margin:0}
+    .big-quote em{font-style:normal;color:var(--hot)}
+    .strategy-main p{margin:0;color:var(--muted);font-size:17px;max-width:780px}
+    .strategy-side{padding:26px;display:grid;gap:12px}
+    .pill-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+    .pill{border:1px solid rgba(240,5,114,.18);background:rgba(240,5,114,.07);color:var(--plum2);padding:8px 10px;border-radius:999px;font-size:12px;font-weight:850}
+    .mini-metric{padding:18px;border-radius:20px;background:linear-gradient(180deg,#fff,var(--cream));border:1px solid var(--line)}
+    .mini-metric b{display:block;color:var(--plum);font-size:17px;letter-spacing:-.03em;margin-bottom:4px}
+    .mini-metric span{display:block;color:var(--muted);font-size:14px;line-height:1.45}
+
+    /* ---------- Logo grid ---------- */
+    .logo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .logo-card{background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:28px;box-shadow:var(--soft);overflow:hidden;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+    .logo-card:hover{transform:translateY(-5px);box-shadow:0 22px 56px rgba(42,6,35,.15);border-color:rgba(240,5,114,.26)}
+    .logo-img{background:linear-gradient(180deg,#fff,#fff7fb);border-bottom:1px solid var(--line);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:22px;position:relative}
+    .logo-img img{width:100%;height:100%;object-fit:contain;border-radius:14px}
+    .logo-card-body{padding:22px}
+    .concept-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:12px}
+    .concept-num{font-size:12px;color:var(--hot);font-weight:950;letter-spacing:.12em;text-transform:uppercase}
+    .tag{padding:6px 9px;border-radius:999px;background:var(--plum);color:#fff;font-size:11px;font-weight:900;white-space:nowrap}
+    .logo-card h3{margin:0 0 10px;font-size:22px;line-height:1.12;color:var(--plum);letter-spacing:-.045em}
+    .logo-card .effect{margin:0 0 13px;color:var(--muted);font-size:14px;line-height:1.55}
+    .use-label{font-size:11px;font-weight:950;letter-spacing:.1em;text-transform:uppercase;color:var(--plum3);margin:0 0 7px}
+    .use-list{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 16px}
+    .use-list span{font-size:11px;font-weight:850;color:var(--plum2);background:rgba(75,11,60,.06);border:1px solid rgba(75,11,60,.08);border-radius:999px;padding:6px 8px}
+    .one-line{border-left:4px solid var(--hot);background:linear-gradient(90deg,rgba(240,5,114,.08),transparent);padding:10px 12px;border-radius:0 14px 14px 0;color:var(--plum);font-weight:850;margin:0;font-size:14px}
+    .asset-note{margin:24px 0 0;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.72);border:1px solid var(--line);color:var(--muted);font-size:13px} .asset-note b{color:var(--plum)}
+
+    /* ---------- Thumbnails ---------- */
     .thumb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .thumb-card{background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:var(--soft)}
-    .thumb-media{position:relative;aspect-ratio:16/9;background:var(--cream2);overflow:hidden} .thumb-media img{width:100%;height:100%;object-fit:cover;transition:transform .25s ease} .thumb-card:hover .thumb-media img{transform:scale(1.03)}
-    .thumb-overlay{position:absolute;left:12px;right:12px;bottom:12px;border-radius:16px;background:rgba(42,6,35,.76);color:white;padding:10px 12px;font-weight:950;line-height:1.06;letter-spacing:-.035em;font-size:18px}
+    .thumb-media{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,var(--cream2),#fff);overflow:hidden} .thumb-media img{width:100%;height:100%;object-fit:contain;padding:6% 9%;transition:transform .25s ease} .thumb-card:hover .thumb-media img{transform:scale(1.04)}
+    .thumb-overlay{position:absolute;left:12px;right:12px;bottom:12px;border-radius:16px;background:rgba(42,6,35,.78);color:#fff;padding:10px 12px;font-weight:950;line-height:1.06;letter-spacing:-.035em;font-size:18px;backdrop-filter:blur(6px)}
     .thumb-body{padding:18px} .thumb-body h3{margin:0 0 8px;color:var(--plum);font-size:21px;letter-spacing:-.04em;line-height:1.12} .thumb-body p{margin:0;color:var(--muted);font-size:14px}
+
+    /* ---------- Routes ---------- */
     .routes{display:grid;gap:18px}
     .route-card{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:34px;box-shadow:var(--soft);overflow:hidden;display:grid;grid-template-columns:1fr .95fr}
     .route-card.primary{border-color:rgba(240,5,114,.24);box-shadow:0 22px 58px rgba(240,5,114,.11)}
@@ -65,23 +110,57 @@
     .choice-box{display:grid;gap:8px;margin-top:18px} .choice-row{padding:10px 12px;border-radius:15px;background:var(--cream);border:1px solid var(--line);font-size:14px;color:var(--plum)}
     .fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px} .fit{padding:14px;border-radius:18px;background:#fff;border:1px solid var(--line);font-size:13px;color:var(--muted)} .fit b{display:block;color:var(--plum);font-size:12px;text-transform:uppercase;letter-spacing:.09em;margin-bottom:5px}
     .route-visual{padding:20px;background:linear-gradient(180deg,var(--cream),#fff);border-left:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
-    .visual-thumb{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;background:var(--cream2);box-shadow:0 16px 38px rgba(42,6,35,.10)} .visual-thumb img{width:100%;height:100%;object-fit:cover}
+    .visual-thumb{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;background:linear-gradient(135deg,var(--cream2),#fff);box-shadow:0 16px 38px rgba(42,6,35,.10)} .visual-thumb img{width:100%;height:100%;object-fit:contain;padding:6% 8%}
     .logo-strip{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:10px}
     .logo-tile{min-height:110px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px}
     .logo-tile span{font-size:10px;font-weight:950;letter-spacing:.12em;color:var(--hot);text-transform:uppercase} .logo-tile img{max-height:72px;object-fit:contain}
     .route-caption{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
     .note{margin-top:18px;padding:18px 20px;border-radius:22px;background:linear-gradient(90deg,rgba(240,5,114,.10),rgba(75,11,60,.06));border:1px solid rgba(240,5,114,.14);color:var(--plum);font-weight:780}
-    .deploy{border-radius:38px;background:linear-gradient(135deg,var(--plum),#4d093c 68%,#7a0d58);color:#fff;padding:36px;box-shadow:var(--shadow)} .deploy h2{color:#fff} .deploy p{color:rgba(255,255,255,.78);max-width:700px} .deploy code{background:rgba(255,255,255,.12);padding:3px 6px;border-radius:7px}
-    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px} .step{padding:16px;border-radius:20px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16)} .step b{display:block;margin-bottom:5px} .step span{color:rgba(255,255,255,.76);font-size:13px}
+
+    /* ---------- Criteria ---------- */
+    .criteria-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .criterion{padding:24px 20px;border-radius:22px;background:rgba(255,255,255,.86);border:1px solid var(--line);box-shadow:var(--soft)}
+    .criterion .num{width:38px;height:38px;border-radius:13px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--hot),var(--plum));color:#fff;font-weight:950;margin-bottom:18px}
+    .criterion h3{margin:0 0 8px;color:var(--plum);font-size:19px;letter-spacing:-.035em;line-height:1.15}
+    .criterion p{margin:0;color:var(--muted);font-size:14px}
+
+    /* ---------- Best 3 ---------- */
+    .recommend-wrap{border-radius:38px;background:linear-gradient(135deg,var(--plum),#4d093c 68%,#7a0d58);color:#fff;padding:36px;box-shadow:var(--shadow);overflow:hidden;position:relative}
+    .recommend-wrap:before{content:"";position:absolute;right:-100px;top:-130px;width:330px;height:330px;border-radius:50%;background:rgba(240,5,114,.30);filter:blur(8px)}
+    .recommend-head{position:relative;z-index:2;display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:22px}
+    .recommend-head h2{color:#fff}
+    .recommend-head p{max-width:520px;color:rgba(255,255,255,.80);margin:0}
+    .rank-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:stretch}
+    .rank-card{border-radius:26px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);padding:24px;backdrop-filter:blur(10px)}
+    .rank-card.primary{background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.10));border-color:rgba(255,255,255,.32)}
+    .rank-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:999px;background:var(--hot);color:#fff;font-weight:950;font-size:12px;margin-bottom:16px}
+    .rank-card h3{margin:0 0 10px;font-size:23px;letter-spacing:-.045em;line-height:1.12}
+    .rank-card p{margin:0;color:rgba(255,255,255,.80);font-size:14px}
+    .rank-note{position:relative;z-index:2;margin:20px 0 0;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);color:rgba(255,255,255,.9);font-size:14px;font-weight:700;line-height:1.5}
+
+    /* ---------- Roadmap ---------- */
+    .roadmap{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+    .phase{min-height:315px;padding:20px;border-radius:26px;border:1px solid var(--line);background:rgba(255,255,255,.88);box-shadow:var(--soft);display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+    .phase-top{display:flex;flex-direction:column;gap:10px}
+    .phase-num{color:var(--hot);font-size:12px;font-weight:950;letter-spacing:.12em;text-transform:uppercase}
+    .phase h3{margin:0;color:var(--plum);font-size:20px;line-height:1.1;letter-spacing:-.04em}
+    .phase ul{margin:0;padding-left:17px;color:var(--muted);font-size:13px;line-height:1.55}
+    .phase-goal{padding:12px;border-radius:16px;background:rgba(240,5,114,.07);color:var(--plum);font-weight:850;font-size:13px;line-height:1.45}
+
+    /* ---------- CTA ---------- */
+    .final-cta{padding:0 0 30px}
+    .cta-panel{border-radius:42px;background:radial-gradient(circle at 15% 10%, rgba(255,255,255,.24), transparent 25%),linear-gradient(135deg,var(--hot),var(--plum));color:#fff;padding:46px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr .78fr;gap:30px;align-items:center}
+    .cta-panel h2{color:#fff;margin-bottom:16px}
+    .cta-panel p{margin:0;color:rgba(255,255,255,.84);font-size:17px;max-width:650px}
+    .next-list{display:grid;gap:10px}
+    .next-item{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.16);font-weight:850;font-size:15px}
+    .check{flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:#fff;color:var(--hot);display:flex;align-items:center;justify-content:center;font-weight:950;font-size:13px}
+
     footer{padding:36px 0 70px;color:var(--muted);font-size:13px;text-align:center}
 
-    /* ---------- Click-to-enlarge modal ---------- */
-    .logo-tile,
-    .visual-thumb,
-    .thumb-media{cursor:zoom-in}
-    .logo-tile:focus-within,
-    .visual-thumb:focus-within,
-    .thumb-media:focus-within{outline:3px solid rgba(240,5,114,.35);outline-offset:3px}
+    /* ---------- Click-to-enlarge ---------- */
+    .logo-tile,.visual-thumb,.thumb-media,.logo-img,.share-img{cursor:zoom-in}
+    .logo-tile:focus-within,.visual-thumb:focus-within,.thumb-media:focus-within,.logo-img:focus-within,.share-img:focus-within{outline:3px solid rgba(240,5,114,.35);outline-offset:3px}
     .zoom-hint{font-size:10px;font-weight:850;color:rgba(42,6,35,.52);text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
     .image-modal{position:fixed;inset:0;z-index:999;display:none;align-items:center;justify-content:center;padding:calc(18px + env(safe-area-inset-top)) 16px calc(18px + env(safe-area-inset-bottom));background:rgba(22,7,18,.78);backdrop-filter:blur(14px)}
     .image-modal.open{display:flex}
@@ -92,104 +171,349 @@
     .image-modal-body{padding:16px;background:#fff;overflow:auto;display:flex;align-items:center;justify-content:center}
     .image-modal-body img{width:auto;max-width:100%;max-height:72svh;object-fit:contain;border-radius:18px;background:var(--cream)}
     .image-modal-caption{margin:0;padding:0 18px 16px;color:var(--muted);font-size:13px;line-height:1.45;background:#fff}
-    @media(max-width:640px){.image-modal{padding:calc(10px + env(safe-area-inset-top)) 10px calc(10px + env(safe-area-inset-bottom))}.image-modal-panel{border-radius:22px;max-height:94svh}.image-modal-body{padding:10px}.image-modal-body img{max-height:70svh}.image-modal-title{font-size:14px}.image-modal-close{width:36px;height:36px}}
 
-    @media(max-width:980px){.hero-panel,.route-card{grid-template-columns:1fr}.hero-copy{padding:42px 34px 4px}.hero-visual{padding:0 34px 38px}.hero-points,.thumb-grid{grid-template-columns:1fr 1fr}.route-visual{border-left:0;border-top:1px solid var(--line)}.section-head{align-items:flex-start;flex-direction:column}.steps{grid-template-columns:1fr 1fr}}
-    @media(max-width:640px){.wrap{padding:0 16px}.nav{padding:10px 16px}.nav-links{display:none}.hero{padding:28px 0 18px}.hero-panel{border-radius:28px;min-height:auto}.hero-copy{padding:30px 22px 0}.hero h1{font-size:43px}.lead{font-size:15px}.hero-actions .btn{width:100%}.hero-points,.thumb-grid,.fit-grid,.steps{grid-template-columns:1fr}.hero-visual{padding:0 22px 26px}section{padding:44px 0}.route-card{border-radius:28px}.route-text{padding:24px 20px}.route-visual{padding:16px}.logo-strip{grid-template-columns:1fr 1fr 1fr;gap:8px}.logo-tile{min-height:78px;padding:7px}.logo-tile img{max-height:48px}.logo-tile span{font-size:9px}.deploy{padding:26px;border-radius:28px}}
+    /* ---------- Responsive ---------- */
+    @media(max-width:980px){
+      .hero-panel,.route-card,.strategy-grid,.cta-panel{grid-template-columns:1fr}
+      .hero-copy{padding:42px 34px 4px}.hero-visual{padding:0 34px 38px}
+      .hero-points,.thumb-grid,.logo-grid,.criteria-grid{grid-template-columns:1fr 1fr}
+      .route-visual{border-left:0;border-top:1px solid var(--line)}
+      .section-head{align-items:flex-start;flex-direction:column}
+      .rank-grid{grid-template-columns:1fr}
+      .roadmap{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:640px){
+      .wrap{padding:0 16px}.nav{padding:10px 16px}.nav-links{display:none}
+      .hero{padding:28px 0 18px}.hero-panel{border-radius:28px;min-height:auto}.hero-copy{padding:30px 22px 0}
+      .hero h1{font-size:43px}.lead{font-size:15px}.hero-actions .btn{width:100%}
+      .hero-points,.thumb-grid,.logo-grid,.fit-grid,.criteria-grid,.roadmap{grid-template-columns:1fr}
+      .hero-visual{padding:0 22px 26px}section{padding:44px 0}
+      .route-card{border-radius:28px}.route-text{padding:24px 20px}.route-visual{padding:16px}
+      .logo-strip{grid-template-columns:1fr 1fr 1fr;gap:8px}.logo-tile{min-height:78px;padding:7px}.logo-tile img{max-height:48px}.logo-tile span{font-size:9px}
+      .recommend-wrap,.cta-panel{padding:26px;border-radius:30px}.phase{min-height:auto}
+      .image-modal{padding:calc(10px + env(safe-area-inset-top)) 10px calc(10px + env(safe-area-inset-bottom))}.image-modal-panel{border-radius:22px;max-height:94svh}.image-modal-body{padding:10px}.image-modal-body img{max-height:70svh}.image-modal-title{font-size:14px}.image-modal-close{width:36px;height:36px}
+    }
+    @media print{
+      body{background:#fff;color:#111}.topbar,.image-modal{display:none}
+      .hero-panel,.recommend-wrap,.cta-panel{box-shadow:none}
+      .logo-card,.criterion,.phase,.strategy-main,.strategy-side,.route-card,.thumb-card{box-shadow:none}
+      section{break-inside:avoid}
+    }
   </style>
 </head>
 <body>
   <header class="topbar">
     <nav class="nav" aria-label="Page navigation">
-      <a class="mini-brand" href="#top" aria-label="Beauty Maxx home"><span class="mini-mark"></span><span>Beauty Maxx · Logo Routes</span></a>
-      <div class="nav-links"><a href="#thumbs">Thumbnails</a><a href="#routes">Routes</a><a href="#deploy">Deploy</a></div>
+      <a class="mini-brand" href="#top" aria-label="Beauty Maxx home"><span class="mini-mark"></span><span>Beauty Maxx · Launch OS</span></a>
+      <div class="nav-links">
+        <a href="#strategy">Strategy</a>
+        <a href="#logos">Logos</a>
+        <a href="#thumbs">Hooks</a>
+        <a href="#routes">Routes</a>
+        <a href="#best">Best 3</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#next">Next</a>
+      </div>
     </nav>
   </header>
+
   <main id="top">
+    <!-- HERO -->
     <section class="hero">
       <div class="wrap">
         <div class="hero-panel">
           <div class="hero-copy">
             <div>
-              <span class="eyebrow">iPhone-ready proposal page</span>
-              <h1>Beauty Maxx<br>Logo Decision Paths</h1>
-              <p class="subtitle">Thumbnail Sentences · Logo Routes · Brand Growth Options</p>
-              <p class="lead">Choose the business route first. Then choose the logo. Each thumbnail below turns a logo direction into a business future the team can understand at a glance.</p>
-              <div class="hero-actions"><a class="btn primary" href="#routes">View decision routes</a><a class="btn ghost" href="#thumbs">View thumbnail hooks</a></div>
+              <span class="eyebrow"><span class="spark" aria-hidden="true"></span> Brand Launch Direction</span>
+              <h1>Beauty Maxx<br>Brand Launch Direction</h1>
+              <p class="subtitle">Logo Concept · Decision Routes · Local Trust · Online Growth System</p>
+              <p class="lead">Beauty Maxx isn't just another new beauty supply store. Understand the six logos, explore the routes each one opens, then converge on a decision that fits the business you actually want to build.</p>
+              <div class="hero-actions"><a class="btn primary" href="#logos">See the six logos</a><a class="btn ghost" href="#routes">Explore decision routes</a></div>
             </div>
             <div class="hero-points">
-              <div class="point"><b>Online-first</b><span>Concept 03 gets the strongest role for social, promos, and product movement.</span></div>
-              <div class="point"><b>Community</b><span>Concept 02 carries the strongest beauty identity and emotional connection.</span></div>
-              <div class="point"><b>Local / Scale</b><span>Concept 05 and 06 support storefront trust and future distribution.</span></div>
+              <div class="point"><b>Logo</b><span>The face customers recognize first &mdash; on the sign and in search.</span></div>
+              <div class="point"><b>Google Trust</b><span>Where a search turns into "okay, I'll go there."</span></div>
+              <div class="point"><b>Brand Home</b><span>What makes one store look like a real chain, not a corner shop.</span></div>
             </div>
           </div>
           <div class="hero-visual">
             <div class="share-card">
-              <div class="share-img"><img src="assets/thumb-01-online-first-growth.png" alt="Beauty Maxx online-first thumbnail"><div class="overlay-text">Make Beauty Move Online.</div></div>
-              <h3>Social preview first, logo choice second.</h3>
-              <p>This page is built to work cleanly on iPhone Safari and Netlify at beautymaxxlogo.netlify.app.</p>
+              <div class="share-img"><img src="assets/logo-05.png" alt="Beauty Maxx logo sample"><div class="overlay-text">From First Look to Repeat Visits.</div></div>
+              <h3>Choose the route first, the logo second.</h3>
+              <p>A logo isn't a pretty picture &mdash; it's the first device that turns street recognition into search trust, and search trust into repeat visits.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="thumbs">
+    <!-- STRATEGY -->
+    <section id="strategy">
       <div class="wrap">
-        <div class="section-head"><div><div class="kicker">Thumbnail Sentences</div><h2>Six visual hooks for the proposal.</h2></div><p class="section-copy">The thumbnail image should create the business scene. The sentence should do the strategic work in one glance.</p></div>
-        <div class="thumb-grid">
-          <article class="thumb-card"><div class="thumb-media"><img src="assets/thumb-01-online-first-growth.png" alt="Online first thumbnail"><div class="thumb-overlay">Make Beauty Move Online.</div></div><div class="thumb-body"><h3>Online-first Growth</h3><p>For Concept 03: social, promos, drops, mobile banners, and e-commerce energy.</p></div></article>
-          <article class="thumb-card"><div class="thumb-media"><img src="assets/thumb-02-community-identity.png" alt="Community identity thumbnail"><div class="thumb-overlay">Beauty That Feels Like You.</div></div><div class="thumb-body"><h3>Community Beauty Identity</h3><p>For Concept 02: hair identity, self-expression, and direct emotional connection.</p></div></article>
-          <article class="thumb-card"><div class="thumb-media"><img src="assets/thumb-03-local-chain-trust.png" alt="Local chain thumbnail"><div class="thumb-overlay">Easy to Find. Easy to Trust.</div></div><div class="thumb-body"><h3>Local Chain Trust</h3><p>For Concept 05: signage, Google trust, walk-ins, repeat visits, and review loops.</p></div></article>
-          <article class="thumb-card"><div class="thumb-media"><img src="assets/thumb-04-wholesale-expansion.png" alt="Wholesale expansion thumbnail"><div class="thumb-overlay">From One Store to a Beauty System.</div></div><div class="thumb-body"><h3>Wholesale Expansion</h3><p>For Concept 06: multi-store logic, B2B, packaging, labels, and distribution.</p></div></article>
-          <article class="thumb-card"><div class="thumb-media"><img src="assets/thumb-05-google-search-trust.png" alt="Google trust thumbnail"><div class="thumb-overlay">Found on Google. Trusted in Seconds.</div></div><div class="thumb-body"><h3>Google Search Trust</h3><p>For Phase 02: GBP setup, reviews, directions, and local discovery credibility.</p></div></article>
-          <article class="thumb-card"><div class="thumb-media"><img src="assets/thumb-06-brand-homepage.png" alt="Brand homepage thumbnail"><div class="thumb-overlay">A Storefront That Works Online.</div></div><div class="thumb-body"><h3>Brand Homepage</h3><p>For Phase 03: homepage, product categories, brand story, and inquiry structure.</p></div></article>
+        <div class="section-head">
+          <div><div class="kicker">Brand Strategy Summary</div><h2>Logo is only the first door.</h2></div>
+          <p class="section-copy">The real goal isn't a single logo. It's the first impression of a new store, the trust customers feel online, and a structure that's ready to grow.</p>
+        </div>
+        <div class="strategy-grid">
+          <article class="strategy-main">
+            <p class="big-quote">The real goal is <em>trust</em>, <em>traffic</em>, and <em>expansion</em>.</p>
+            <p>The brand work for Beauty Maxx can't stop at the logo. The logo is how a customer first recognizes the store. The Google Business Profile is where they decide to trust it. And the website is what makes the brand look like a real retail chain &mdash; not just a single storefront.</p>
+          </article>
+          <aside class="strategy-side">
+            <div class="mini-metric"><b>Retail-ready first impression</b><span>Reads clearly on the sign, the shopping bag, the review card, and the social profile.</span></div>
+            <div class="mini-metric"><b>Clear beauty category</b><span>Wigs, braiding hair, lashes, hair care, and beauty tools all come to mind at a glance.</span></div>
+            <div class="mini-metric"><b>Expansion-ready system</b><span>Built to carry into multiple stores, wholesale decks, and online distribution later.</span></div>
+            <div class="pill-row"><span class="pill">Hot Pink</span><span class="pill">Deep Plum</span><span class="pill">Warm Off-White</span><span class="pill">High Visibility</span></div>
+          </aside>
         </div>
       </div>
     </section>
 
+    <!-- LOGO GRID (UNDERSTAND) -->
+    <section id="logos">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Step 1 · Logo Concept Grid</div><h2>Six directions, six different effects.</h2></div>
+          <p class="section-copy">Each logo isn't just a style choice &mdash; it speaks to a different customer feeling and a different operational job. Tap any logo to enlarge it.</p>
+        </div>
+        <div class="logo-grid">
+          <article class="logo-card">
+            <div class="logo-img"><img src="assets/logo-01.png" alt="Concept 01 Popular Friendly Type logo"></div>
+            <div class="logo-card-body">
+              <div class="concept-top"><span class="concept-num">Concept 01</span><span class="tag">Popular</span></div>
+              <h3>Popular Friendly Type</h3>
+              <p class="effect">The most approachable, mainstream-friendly mark. A round BM symbol in solid hot pink lowers the "do I belong here?" barrier and creates a young, easy, everyday beauty feel.</p>
+              <p class="use-label">Best used for</p>
+              <div class="use-list"><span>Signage</span><span>Google Profile</span><span>Shopping Bag</span><span>Launch Promo</span></div>
+              <p class="one-line">Easy to remember, easy to walk into.</p>
+            </div>
+          </article>
+          <article class="logo-card">
+            <div class="logo-img"><img src="assets/logo-02.png" alt="Concept 02 Queen Energy Type logo"></div>
+            <div class="logo-card-body">
+              <div class="concept-top"><span class="concept-num">Concept 02</span><span class="tag">Emotion</span></div>
+              <h3>Queen Energy Type</h3>
+              <p class="effect">Speaks most directly to self-expression, hair, style, and confidence. The feminine silhouette and crown create the feeling of "the place that makes me look my best."</p>
+              <p class="use-label">Best used for</p>
+              <div class="use-list"><span>Wigs</span><span>Braiding Hair</span><span>Lashes</span><span>Social Content</span></div>
+              <p class="one-line">The strongest emotional connection to the core customer.</p>
+            </div>
+          </article>
+          <article class="logo-card">
+            <div class="logo-img"><img src="assets/logo-03.png" alt="Concept 03 Gen Z Pop Type logo"></div>
+            <div class="logo-card-body">
+              <div class="concept-top"><span class="concept-num">Concept 03</span><span class="tag">Gen Z</span></div>
+              <h3>Gen Z Pop Type</h3>
+              <p class="effect">A sticker-style symbol with a bold X point makes a pop-forward impression built for social and promotions. Young, eye-catching, and quick to grab attention in event content.</p>
+              <p class="use-label">Best used for</p>
+              <div class="use-list"><span>Sale Banner</span><span>Instagram</span><span>Short-form</span><span>Seasonal Promo</span></div>
+              <p class="one-line">The youngest, most attention-grabbing of the set.</p>
+            </div>
+          </article>
+          <article class="logo-card">
+            <div class="logo-img"><img src="assets/logo-04.png" alt="Concept 04 Clean Chain Type logo"></div>
+            <div class="logo-card-body">
+              <div class="concept-top"><span class="concept-num">Concept 04</span><span class="tag">Clean</span></div>
+              <h3>Clean Chain Type</h3>
+              <p class="effect">Hot pink paired with deep plum tones down the loudness and makes the store look more organized. It reads as more structured and trustworthy than a typical beauty supply.</p>
+              <p class="use-label">Best used for</p>
+              <div class="use-list"><span>Official Sign</span><span>Website</span><span>Brand Deck</span><span>Profile</span></div>
+              <p class="one-line">Stable, and built to last as a chain.</p>
+            </div>
+          </article>
+          <article class="logo-card">
+            <div class="logo-img"><img src="assets/logo-05.png" alt="Concept 05 Balanced Badge Type logo"></div>
+            <div class="logo-card-body">
+              <div class="concept-top"><span class="concept-num">Concept 05</span><span class="tag">Balance</span></div>
+              <h3>Balanced Badge Type</h3>
+              <p class="effect">The round badge structure boosts memorability, while the sparkle and dot details add a clear beauty feel. Carries mass appeal and brand polish at the same time.</p>
+              <p class="use-label">Best used for</p>
+              <div class="use-list"><span>Store Sign</span><span>Profile Icon</span><span>Review Card</span><span>Packaging</span></div>
+              <p class="one-line">The best balance of broad appeal and chain-ready feel.</p>
+            </div>
+          </article>
+          <article class="logo-card">
+            <div class="logo-img"><img src="assets/logo-06.png" alt="Concept 06 Expansion System Type logo"></div>
+            <div class="logo-card-body">
+              <div class="concept-top"><span class="concept-num">Concept 06</span><span class="tag">Expansion</span></div>
+              <h3>Expansion System Type</h3>
+              <p class="effect">An angular BM structure with a diagonal accent signals speed, order, and operational strength. The easiest direction to systematize across stores, wholesale, and distribution.</p>
+              <p class="use-label">Best used for</p>
+              <div class="use-list"><span>Chain Branding</span><span>B2B</span><span>Distribution</span><span>System</span></div>
+              <p class="one-line">The strongest for long-term scale and operational trust.</p>
+            </div>
+          </article>
+        </div>
+        <div class="asset-note"><b>Asset note.</b> This file is wired to <code>assets/logo-01.png</code> through <code>assets/logo-06.png</code>. Drop the final artwork in with the same names and the document updates instantly.</div>
+      </div>
+    </section>
+
+    <!-- THUMBNAIL HOOKS -->
+    <section id="thumbs">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Visual Hooks</div><h2>Six one-glance hooks for the proposal.</h2></div>
+          <p class="section-copy">Each hook pairs a logo with the business scene it unlocks &mdash; so the team gets the strategy in a single glance. Tap any tile to enlarge.</p>
+        </div>
+        <div class="thumb-grid">
+          <article class="thumb-card"><div class="thumb-media"><img src="assets/logo-03.png" alt="Online-first growth hook · Concept 03"><div class="thumb-overlay">Make Beauty Move Online.</div></div><div class="thumb-body"><h3>Online-first Growth</h3><p>For Concept 03: social, promos, drops, mobile banners, and e-commerce energy.</p></div></article>
+          <article class="thumb-card"><div class="thumb-media"><img src="assets/logo-02.png" alt="Community identity hook · Concept 02"><div class="thumb-overlay">Beauty That Feels Like You.</div></div><div class="thumb-body"><h3>Community Beauty Identity</h3><p>For Concept 02: hair identity, self-expression, and direct emotional connection.</p></div></article>
+          <article class="thumb-card"><div class="thumb-media"><img src="assets/logo-05.png" alt="Local chain trust hook · Concept 05"><div class="thumb-overlay">Easy to Find. Easy to Trust.</div></div><div class="thumb-body"><h3>Local Chain Trust</h3><p>For Concept 05: signage, Google trust, walk-ins, repeat visits, and review loops.</p></div></article>
+          <article class="thumb-card"><div class="thumb-media"><img src="assets/logo-06.png" alt="Wholesale expansion hook · Concept 06"><div class="thumb-overlay">From One Store to a Beauty System.</div></div><div class="thumb-body"><h3>Wholesale Expansion</h3><p>For Concept 06: multi-store logic, B2B, packaging, labels, and distribution.</p></div></article>
+          <article class="thumb-card"><div class="thumb-media"><img src="assets/logo-01.png" alt="Google search trust hook · Concept 01"><div class="thumb-overlay">Found on Google. Trusted in Seconds.</div></div><div class="thumb-body"><h3>Google Search Trust</h3><p>For Phase 02: GBP setup, reviews, directions, and local discovery credibility.</p></div></article>
+          <article class="thumb-card"><div class="thumb-media"><img src="assets/logo-04.png" alt="Brand homepage hook · Concept 04"><div class="thumb-overlay">A Storefront That Works Online.</div></div><div class="thumb-body"><h3>Brand Homepage</h3><p>For Phase 03: homepage, product categories, brand story, and inquiry structure.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROUTES (EXPLORE) -->
     <section id="routes">
       <div class="wrap">
-        <div class="section-head"><div><div class="kicker">Decision Paths</div><h2>Show the future next to the logo.</h2></div><p class="section-copy">This section compares not only logo styles, but also the future each logo makes easier to build.</p></div>
+        <div class="section-head">
+          <div><div class="kicker">Step 2 · Decision Routes</div><h2>Show the future next to the logo.</h2></div>
+          <p class="section-copy">This section compares not only logo styles, but the future each logo makes easier to build. Tap any logo to enlarge.</p>
+        </div>
         <div class="routes">
-          <article class="route-card primary">
-            <div class="route-text"><div><span class="route-badge">Route A · Online-first growth</span><h3>For social, e-commerce, promos, and digital recognition</h3><p>If Beauty Maxx should travel beyond the storefront, Concept 03 deserves serious attention. It may not be the safest traditional chain logo, but it is the most alive online.</p><div class="choice-box"><div class="choice-row"><b>Primary:</b> Concept 03 · Gen Z Pop Type</div><div class="choice-row"><b>Secondary:</b> Concept 02 · Queen Energy Type</div><div class="choice-row"><b>Support:</b> Concept 05 for packaging and profile stability</div></div></div><div class="fit-grid"><div class="fit"><b>Best for</b> Reels, sale drops, new arrivals, mobile banners.</div><div class="fit"><b>Feels like</b> Young, loud, visual, fast-moving, promo-friendly.</div></div></div>
-            <div class="route-visual"><div class="visual-thumb"><img src="assets/thumb-01-online-first-growth.png" alt="Online-first route thumbnail"><div class="thumb-overlay">Make Beauty Move Online.</div></div><div class="logo-strip"><div class="logo-tile"><span>Primary</span><img src="assets/logo-03.png" alt="Concept 03"></div><div class="logo-tile"><span>Secondary</span><img src="assets/logo-02.png" alt="Concept 02"></div><div class="logo-tile"><span>Support</span><img src="assets/logo-05.png" alt="Concept 05"></div></div><p class="route-caption">Use this if the first bet is online recognition, content movement, and younger shopper attention.</p></div>
+          <article class="route-card">
+            <div class="route-text"><div><span class="route-badge">Route A · Online-first growth</span><h3>For social, e-commerce, promos, and digital recognition</h3><p>If Beauty Maxx should travel beyond the storefront, Concept 03 leads here. It may not be the safest traditional chain logo, but it's the most alive online.</p><div class="choice-box"><div class="choice-row"><b>Primary:</b> Concept 03 · Gen Z Pop Type</div><div class="choice-row"><b>Secondary:</b> Concept 02 · Queen Energy Type</div><div class="choice-row"><b>Support:</b> Concept 05 for packaging and profile stability</div></div></div><div class="fit-grid"><div class="fit"><b>Best for</b> Reels, sale drops, new arrivals, mobile banners.</div><div class="fit"><b>Feels like</b> Young, loud, visual, fast-moving, promo-friendly.</div></div></div>
+            <div class="route-visual"><div class="visual-thumb"><img src="assets/logo-03.png" alt="Route A primary · Concept 03"><div class="thumb-overlay">Make Beauty Move Online.</div></div><div class="logo-strip"><div class="logo-tile"><span>Primary</span><img src="assets/logo-03.png" alt="Concept 03 Gen Z Pop Type"></div><div class="logo-tile"><span>Secondary</span><img src="assets/logo-02.png" alt="Concept 02 Queen Energy Type"></div><div class="logo-tile"><span>Support</span><img src="assets/logo-05.png" alt="Concept 05 Balanced Badge Type"></div></div><p class="route-caption">Use this if the first bet is online recognition, content movement, and younger shopper attention.</p></div>
           </article>
           <article class="route-card">
-            <div class="route-text"><div><span class="route-badge">Route B · Community beauty identity</span><h3>For emotional connection, hair identity, and self-expression</h3><p>If the brand wants to feel close to the customer’s beauty life, Concept 02 carries the strongest symbol: confidence, hair culture, beauty pride, and the feeling of being seen.</p><div class="choice-box"><div class="choice-row"><b>Primary:</b> Concept 02 · Queen Energy Type</div><div class="choice-row"><b>Secondary:</b> Concept 03 · Gen Z Pop Type</div><div class="choice-row"><b>Support:</b> Concept 01 if more mainstream approachability is needed</div></div></div><div class="fit-grid"><div class="fit"><b>Best for</b> Wig walls, braiding hair, lashes, confidence-led campaigns.</div><div class="fit"><b>Feels like</b> Seen, expressive, beauty-proud, direct.</div></div></div>
-            <div class="route-visual"><div class="visual-thumb"><img src="assets/thumb-02-community-identity.png" alt="Community route thumbnail"><div class="thumb-overlay">Beauty That Feels Like You.</div></div><div class="logo-strip"><div class="logo-tile"><span>Primary</span><img src="assets/logo-02.png" alt="Concept 02"></div><div class="logo-tile"><span>Secondary</span><img src="assets/logo-03.png" alt="Concept 03"></div><div class="logo-tile"><span>Support</span><img src="assets/logo-01.png" alt="Concept 01"></div></div><p class="route-caption">Use this if the first bet is customer identity, confidence, and beauty category clarity.</p></div>
+            <div class="route-text"><div><span class="route-badge">Route B · Community beauty identity</span><h3>For emotional connection, hair identity, and self-expression</h3><p>If the brand wants to feel close to the customer's beauty life, Concept 02 carries the strongest symbol: confidence, hair culture, beauty pride, and the feeling of being seen.</p><div class="choice-box"><div class="choice-row"><b>Primary:</b> Concept 02 · Queen Energy Type</div><div class="choice-row"><b>Secondary:</b> Concept 03 · Gen Z Pop Type</div><div class="choice-row"><b>Support:</b> Concept 01 if more mainstream approachability is needed</div></div></div><div class="fit-grid"><div class="fit"><b>Best for</b> Wig walls, braiding hair, lashes, confidence-led campaigns.</div><div class="fit"><b>Feels like</b> Seen, expressive, beauty-proud, direct.</div></div></div>
+            <div class="route-visual"><div class="visual-thumb"><img src="assets/logo-02.png" alt="Route B primary · Concept 02"><div class="thumb-overlay">Beauty That Feels Like You.</div></div><div class="logo-strip"><div class="logo-tile"><span>Primary</span><img src="assets/logo-02.png" alt="Concept 02 Queen Energy Type"></div><div class="logo-tile"><span>Secondary</span><img src="assets/logo-03.png" alt="Concept 03 Gen Z Pop Type"></div><div class="logo-tile"><span>Support</span><img src="assets/logo-01.png" alt="Concept 01 Popular Friendly Type"></div></div><p class="route-caption">Use this if the first bet is customer identity, confidence, and beauty category clarity.</p></div>
           </article>
           <article class="route-card">
-            <div class="route-text"><div><span class="route-badge">Route C · Local chain trust</span><h3>For signage, Google trust, walk-ins, and repeat visits</h3><p>If the immediate job is local recognition, Concept 05 is the safest balanced choice. It is easy to read, easy to use, and stable across the storefront, profile, bag, and review card.</p><div class="choice-box"><div class="choice-row"><b>Primary:</b> Concept 05 · Balanced Badge Type</div><div class="choice-row"><b>Secondary:</b> Concept 01 · Popular Friendly Type</div><div class="choice-row"><b>Support:</b> Concept 04 for a cleaner chain-style finish</div></div></div><div class="fit-grid"><div class="fit"><b>Best for</b> Store sign, GBP, review QR cards, shopping bags.</div><div class="fit"><b>Feels like</b> Recognizable, local, organized, easy to trust.</div></div></div>
-            <div class="route-visual"><div class="visual-thumb"><img src="assets/thumb-03-local-chain-trust.png" alt="Local chain route thumbnail"><div class="thumb-overlay">Easy to Find. Easy to Trust.</div></div><div class="logo-strip"><div class="logo-tile"><span>Primary</span><img src="assets/logo-05.png" alt="Concept 05"></div><div class="logo-tile"><span>Secondary</span><img src="assets/logo-01.png" alt="Concept 01"></div><div class="logo-tile"><span>Support</span><img src="assets/logo-04.png" alt="Concept 04"></div></div><p class="route-caption">Use this if the first bet is local store credibility and immediate launch stability.</p></div>
+            <div class="route-text"><div><span class="route-badge">Route C · Local chain trust</span><h3>For signage, Google trust, walk-ins, and repeat visits</h3><p>If the immediate job is local recognition, Concept 05 is the safest balanced choice. Easy to read, easy to use, and stable across the storefront, profile, bag, and review card.</p><div class="choice-box"><div class="choice-row"><b>Primary:</b> Concept 05 · Balanced Badge Type</div><div class="choice-row"><b>Secondary:</b> Concept 01 · Popular Friendly Type</div><div class="choice-row"><b>Support:</b> Concept 04 for a cleaner chain-style finish</div></div></div><div class="fit-grid"><div class="fit"><b>Best for</b> Store sign, GBP, review QR cards, shopping bags.</div><div class="fit"><b>Feels like</b> Recognizable, local, organized, easy to trust.</div></div></div>
+            <div class="route-visual"><div class="visual-thumb"><img src="assets/logo-05.png" alt="Route C primary · Concept 05"><div class="thumb-overlay">Easy to Find. Easy to Trust.</div></div><div class="logo-strip"><div class="logo-tile"><span>Primary</span><img src="assets/logo-05.png" alt="Concept 05 Balanced Badge Type"></div><div class="logo-tile"><span>Secondary</span><img src="assets/logo-01.png" alt="Concept 01 Popular Friendly Type"></div><div class="logo-tile"><span>Support</span><img src="assets/logo-04.png" alt="Concept 04 Clean Chain Type"></div></div><p class="route-caption">Use this if the first bet is local store credibility and immediate launch stability.</p></div>
           </article>
           <article class="route-card">
             <div class="route-text"><div><span class="route-badge">Route D · Wholesale / multi-store system</span><h3>For B2B, distribution, and future brand architecture</h3><p>If the long-term plan includes multiple stores, salon relationships, wholesale pages, or overseas reach, Concept 06 has the strongest system logic.</p><div class="choice-box"><div class="choice-row"><b>Primary:</b> Concept 06 · Expansion System Type</div><div class="choice-row"><b>Secondary:</b> Concept 04 · Clean Chain Type</div><div class="choice-row"><b>Support:</b> Concept 05 for consumer-facing touchpoints</div></div></div><div class="fit-grid"><div class="fit"><b>Best for</b> B2B deck, wholesale landing, labels, boxes.</div><div class="fit"><b>Feels like</b> Scalable, disciplined, operational, distribution-ready.</div></div></div>
-            <div class="route-visual"><div class="visual-thumb"><img src="assets/thumb-04-wholesale-expansion.png" alt="Wholesale route thumbnail"><div class="thumb-overlay">From One Store to a Beauty System.</div></div><div class="logo-strip"><div class="logo-tile"><span>Primary</span><img src="assets/logo-06.png" alt="Concept 06"></div><div class="logo-tile"><span>Secondary</span><img src="assets/logo-04.png" alt="Concept 04"></div><div class="logo-tile"><span>Support</span><img src="assets/logo-05.png" alt="Concept 05"></div></div><p class="route-caption">Use this if the first bet is expansion into wholesale, B2B, and repeatable brand systems.</p></div>
+            <div class="route-visual"><div class="visual-thumb"><img src="assets/logo-06.png" alt="Route D primary · Concept 06"><div class="thumb-overlay">From One Store to a Beauty System.</div></div><div class="logo-strip"><div class="logo-tile"><span>Primary</span><img src="assets/logo-06.png" alt="Concept 06 Expansion System Type"></div><div class="logo-tile"><span>Secondary</span><img src="assets/logo-04.png" alt="Concept 04 Clean Chain Type"></div><div class="logo-tile"><span>Support</span><img src="assets/logo-05.png" alt="Concept 05 Balanced Badge Type"></div></div><p class="route-caption">Use this if the first bet is expansion into wholesale, B2B, and repeatable brand systems.</p></div>
           </article>
         </div>
-        <div class="note"><b>Strategic note:</b> If Beauty Maxx wants to become more than a local store, Concept 03 is not a risky distraction. It is the sharper online bet. If the first move is local trust, Concept 05 is safer. If the first move is online growth, Concept 03 is stronger.</div>
+        <div class="note"><b>Strategic note:</b> There's no single "winner" here &mdash; the right logo depends on the first move. If the first move is local trust, Route C is safer. If it's online growth, Route A is sharper. If it's customer identity, Route B is closest. If it's scale, Route D is strongest. Pick the route, and the logo follows.</div>
       </div>
     </section>
-    <section id="deploy">
+
+    <!-- CRITERIA -->
+    <section id="criteria">
       <div class="wrap">
-        <div class="deploy"><div class="kicker" style="color:#ff9bc7">Netlify Deployment</div><h2>Deploy to beautymaxxlogo.netlify.app</h2><p>Upload this folder to Netlify. Keep <code>index.html</code> at the root, keep all logo and thumbnail images inside <code>assets/</code>, and replace placeholder thumbnail images with final approved visuals when ready.</p><div class="steps"><div class="step"><b>1. Upload folder</b><span>Drag the full folder into Netlify.</span></div><div class="step"><b>2. Set domain</b><span>Use beautymaxxlogo.netlify.app.</span></div><div class="step"><b>3. Update visuals</b><span>Replace the thumbnail images using the same filenames.</span></div><div class="step"><b>4. Check iPhone</b><span>Open in Safari and confirm one-column mobile flow.</span></div></div></div>
+        <div class="section-head">
+          <div><div class="kicker">Selection Criteria</div><h2>How to choose the right logo.</h2></div>
+          <p class="section-copy">Pick based on the operating job, not on taste. Beauty Maxx will live on the sign, in Google search, on social, on the bag, on the website, and later in wholesale materials.</p>
+        </div>
+        <div class="criteria-grid">
+          <article class="criterion"><div class="num">1</div><h3>Street Visibility</h3><p>Can you read it from a distance &mdash; and recognize the name while driving past?</p></article>
+          <article class="criterion"><div class="num">2</div><h3>Customer Approachability</h3><p>Does a first-time customer feel comfortable walking in, no hesitation?</p></article>
+          <article class="criterion"><div class="num">3</div><h3>Beauty Category Clarity</h3><p>Does the feel of hair, wigs, beauty, and self-expression come through naturally?</p></article>
+          <article class="criterion"><div class="num">4</div><h3>Scalability</h3><p>Will it still work across more stores, the website, packaging, and distribution decks?</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST 3 (CONVERGE) -->
+    <section id="best">
+      <div class="wrap">
+        <div class="recommend-wrap">
+          <div class="recommend-head">
+            <div><div class="kicker" style="color:#ff9bc7">Step 3 · Where the routes agree</div><h2>The three most reusable marks.</h2></div>
+            <p>No matter which route you pick, these three show up most often as the safest, most reusable choices across touchpoints. The route decides the order &mdash; not the other way around.</p>
+          </div>
+          <div class="rank-grid">
+            <article class="rank-card primary">
+              <span class="rank-badge">All-rounder · Concept 05</span>
+              <h3>Balanced Badge Type</h3>
+              <p>Appears across Routes A, C, and D as primary or support. The most reusable across the sign, Google profile, shopping bags, and review cards &mdash; the everyday operational pieces.</p>
+            </article>
+            <article class="rank-card">
+              <span class="rank-badge">Easiest entry · Concept 01</span>
+              <h3>Popular Friendly Type</h3>
+              <p>Strongest for early-launch foot traffic and approachability. Customers recognize it instantly, with nothing to figure out before they walk in.</p>
+            </article>
+            <article class="rank-card">
+              <span class="rank-badge">Most scalable · Concept 06</span>
+              <h3>Expansion System Type</h3>
+              <p>If multiple stores and a distribution structure are on the long-term map, this is the most stable, system-ready candidate.</p>
+            </article>
+          </div>
+          <p class="rank-note">Recommended next move: shortlist 2&ndash;3 of these against the route you lean toward, then refine the final mark from there.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Growth Roadmap</div><h2>From logo, to local trust, to expansion.</h2></div>
+          <p class="section-copy">A brand isn't finished in one step. It's built up in stages &mdash; first impression, search trust, website, content, and distribution potential.</p>
+        </div>
+        <div class="roadmap">
+          <article class="phase">
+            <div class="phase-top"><span class="phase-num">Phase 01</span><h3>Brand Face</h3>
+              <ul><li>Select the final logo</li><li>Lock the hot pink signature color</li><li>Organize symbol / wordmark / profile icon</li><li>Simulate it on the storefront sign</li></ul>
+            </div>
+            <div class="phase-goal">Build a brand face that reads from far away and sticks online.</div>
+          </article>
+          <article class="phase">
+            <div class="phase-top"><span class="phase-num">Phase 02</span><h3>Local Trust</h3>
+              <ul><li>Set up the Google Business Profile</li><li>Hours / categories / photos in order</li><li>Wigs, braiding hair, lashes keywords</li><li>Review QR + checkout-counter signage</li></ul>
+            </div>
+            <div class="phase-goal">Make customers feel "this place is legit" the moment they search.</div>
+          </article>
+          <article class="phase">
+            <div class="phase-top"><span class="phase-num">Phase 03</span><h3>Brand Home</h3>
+              <ul><li>Brand intro</li><li>Key categories</li><li>Location / hours / contact</li><li>Split retail vs. salon/wholesale inquiry</li></ul>
+            </div>
+            <div class="phase-goal">Look like a properly run brand, not just one local store.</div>
+          </article>
+          <article class="phase">
+            <div class="phase-top"><span class="phase-num">Phase 04</span><h3>Online Growth</h3>
+              <ul><li>New-arrival content</li><li>Wig / braiding hair / lash content</li><li>In-store display content</li><li>Seasonal sale / event banners</li></ul>
+            </div>
+            <div class="phase-goal">Become a brand customers think of again &mdash; not one-and-done.</div>
+          </article>
+          <article class="phase">
+            <div class="phase-top"><span class="phase-num">Phase 05</span><h3>Distribution Expansion</h3>
+              <ul><li>Salon & wholesale inquiry structure</li><li>Curated product introductions</li><li>B2B page or dedicated landing</li><li>Explore diaspora & overseas reach</li></ul>
+            </div>
+            <div class="phase-goal">Turn local operating experience into salon, wholesale, and wider reach.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta" id="next">
+      <div class="wrap">
+        <div class="cta-panel">
+          <div>
+            <div class="kicker" style="color:#ffb5d6">Final Direction</div>
+            <h2>Beauty Maxx is not a logo-only project.</h2>
+            <p>Beauty Maxx doesn't end with a logo. It creates far more value when it's designed as a brand system &mdash; connecting the first impression of a new store, Google search trust, the website, reviews, content, and distribution potential.</p>
+          </div>
+          <div class="next-list" aria-label="Next steps">
+            <div class="next-item"><span class="check">1</span><span>Pick the route that fits the first move</span></div>
+            <div class="next-item"><span class="check">2</span><span>Shortlist 2&ndash;3 logo candidates</span></div>
+            <div class="next-item"><span class="check">3</span><span>Refine the final logo</span></div>
+            <div class="next-item"><span class="check">4</span><span>Simulate it on sign & profile</span></div>
+            <div class="next-item"><span class="check">5</span><span>Set up GBP & design the website structure</span></div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <footer><div class="wrap">Beauty Maxx Logo Decision Paths · Built for mobile review and fast brand discussion.</div></footer>
 
+  <footer><div class="wrap">Beauty Maxx Brand Launch Direction · Built for mobile review and fast brand discussion.</div></footer>
 
+  <!-- Image enlarge modal -->
   <div class="image-modal" id="imageModal" aria-hidden="true" role="dialog" aria-label="Expanded image preview">
     <div class="image-modal-panel" role="document">
       <div class="image-modal-top">
         <p class="image-modal-title" id="modalTitle">Image preview</p>
-        <button class="image-modal-close" type="button" aria-label="Close expanded image">×</button>
+        <button class="image-modal-close" type="button" aria-label="Close expanded image">&times;</button>
       </div>
-      <div class="image-modal-body">
-        <img id="modalImage" src="" alt="Expanded preview" />
-      </div>
+      <div class="image-modal-body"><img id="modalImage" src="" alt="Expanded preview" /></div>
       <p class="image-modal-caption" id="modalCaption">Tap outside or press ESC to close.</p>
     </div>
   </div>
@@ -206,9 +530,12 @@
       function labelFor(img){
         const tile = img.closest('.logo-tile');
         const route = img.closest('.route-card');
+        const card = img.closest('.logo-card');
         const routeName = route ? (route.querySelector('.route-badge')?.textContent || '').trim() : '';
         const tileRole = tile ? (tile.querySelector('span')?.textContent || '').trim() : '';
+        const cardName = card ? (card.querySelector('h3')?.textContent || '').trim() : '';
         const alt = img.getAttribute('alt') || 'Beauty Maxx visual';
+        if(cardName) return cardName + ' · ' + alt;
         if(routeName && tileRole) return routeName + ' · ' + tileRole + ' · ' + alt;
         if(routeName) return routeName + ' · ' + alt;
         return alt;
@@ -216,10 +543,9 @@
 
       function openModal(img){
         lastFocus = document.activeElement;
-        const title = labelFor(img);
         modalImg.src = img.currentSrc || img.src;
         modalImg.alt = img.alt || 'Expanded Beauty Maxx preview';
-        modalTitle.textContent = title;
+        modalTitle.textContent = labelFor(img);
         modalCaption.textContent = 'Expanded preview. Tap outside or press ESC to close.';
         modal.classList.add('open');
         modal.setAttribute('aria-hidden','false');
@@ -235,8 +561,8 @@
         if(lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus({preventScroll:true});
       }
 
-      document.querySelectorAll('.logo-tile img, .visual-thumb img, .thumb-media img').forEach(function(img){
-        const clickable = img.closest('.logo-tile, .visual-thumb, .thumb-media');
+      document.querySelectorAll('.logo-tile img, .visual-thumb img, .thumb-media img, .logo-img img, .share-img img').forEach(function(img){
+        const clickable = img.closest('.logo-tile, .visual-thumb, .thumb-media, .logo-img, .share-img');
         if(!clickable) return;
         clickable.setAttribute('tabindex','0');
         clickable.setAttribute('role','button');
@@ -258,6 +584,5 @@
       document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
     })();
   </script>
-
 </body>
 </html>
